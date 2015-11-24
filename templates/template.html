@@ -12,3 +12,8 @@
 </ul>
 <h3>This is the end of my child template</h3>
 {% endblock %}
+
+{% block footer %}
+{{ super() }}
+And this comes from the child template!
+{% endblock %}

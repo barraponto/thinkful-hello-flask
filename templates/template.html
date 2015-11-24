@@ -16,4 +16,5 @@
 {% block footer %}
 {{ super() }}
 And this comes from the child template!
+Generated at: {{ current_time | datetimefilter }}
 {% endblock %}

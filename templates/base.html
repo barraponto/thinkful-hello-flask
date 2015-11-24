@@ -1,3 +1,4 @@
+{% from "macros.html" import nav_link with context %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,6 +7,11 @@
           content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <nav class="nav navbar-nav">
+      {{ nav_link('home', 'HOME') }}
+      {{ nav_link('about', 'ABOUT') }}
+      {{ nav_link('contact', 'CONTACT') }}
+      </nav>
     <div id="main">
       <h2>This is part of my base template.</h2>
       {%block content %}{% endblock %}
